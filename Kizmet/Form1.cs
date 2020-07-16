@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Kizmet// see if this is in Git, you git.
+namespace Kizmet// see if this is in Git, you git. Now show changes?
 {
     public partial class Form1 : Form
     {
