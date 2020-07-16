@@ -11,7 +11,7 @@ namespace Kizmet// see if this is in Git, you git. Now show changes?
         {
             InitializeComponent();
         }
-        public bool working = false; //Makes player wait to get next score preventing cheating whether accidental or not
+        public bool working = true; //Makes player wait to get next score preventing cheating whether accidental or not
         PictureBox[] diPic = new PictureBox[5]; //this puts my picture boxes in an array so they work in a loop
         Button[] scoreButton = new Button[15]; 
         Button[] holdButton = new Button[5]; //so I can reset all the hold buttons to green
@@ -114,6 +114,7 @@ namespace Kizmet// see if this is in Git, you git. Now show changes?
             scoreButton[13] = btnFiveKind;
             scoreButton[14] = btnChance;
             lblGT.Text = Score.totalScore.ToString();
+            //working = true;
         }
 
         private void diReset() //blanks out dice after selecting score.
